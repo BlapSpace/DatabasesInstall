@@ -17,8 +17,6 @@ services:
         hard: 65536
     cap_add:
       - IPC_LOCK
-    volumes:
-      - elasticsearch-data: #==> Set PATH <==#
     ports:
       - 9200:9200
   kibana:
