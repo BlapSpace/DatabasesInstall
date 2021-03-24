@@ -1,0 +1,13 @@
+sudo docker run --name BlapRedis -p 6379:6379 -d redis redis-server
+
+sudo docker exec -it BlapRedis sh
+
+redis-cli
+
+CONFIG SET requirepass "pass"
+
+AUTH pass
+
+
+pass => Password required!
+
