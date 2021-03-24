@@ -1,0 +1,12 @@
+version: "3"
+services:
+  fayMongoDB:
+    image: "mongo:latest"
+    container_name: "userStore"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=C)g,DE3{D4SJLjf}VRpö%j3<8}WPv@63Öxü+m!&ög<F_XLa-Fc~n>=NCMwQC5N(A
+    volumes:
+      - ./mongo-volume:/data/db
+    ports:
+      - 27017:27017
